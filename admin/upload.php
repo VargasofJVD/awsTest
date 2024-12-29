@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
         // Save to database
-        $image_url = "/public/uploads/animals/" . $file_name;
+        $image_url = "/awsTest/public/uploads/animals/" . $file_name;
         $stmt = $pdo->prepare("INSERT INTO animals (name, habitat, image_url) VALUES (?, ?, ?)");
         $stmt->execute([$name, $habitat, $image_url]);
         
