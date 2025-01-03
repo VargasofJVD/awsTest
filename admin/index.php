@@ -54,6 +54,12 @@ $animals = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <td><?php echo htmlspecialchars($animal['habitat']); ?></td>
                     <td><img src="<?php echo htmlspecialchars($animal['image_url']); ?>" height="50"></td>
                     <td><?php echo $animal['created_at']; ?></td>
+                    <td>
+                        <form action="delete.php" method="POST" onsubmit="return confirm('Are you sure you want to delete this animal?');">
+                            <input type="hidden" name="id" value="<?php echo $animal['id']; ?>">
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
