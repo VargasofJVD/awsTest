@@ -1,4 +1,3 @@
-<!-- admin/upload.php -->
 <?php
 require_once '../includes/db.php';
 

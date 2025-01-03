@@ -1,10 +1,8 @@
-// includes/db.php
-
 <?php
 $host = 'localhost';
 $dbname = 'animals_db';
-$username = 'root';  // This is XAMPP's default username
-$password = '';      // XAMPP's default password is blank
+$username = 'root'; 
+$password = '';      
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

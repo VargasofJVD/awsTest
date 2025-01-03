@@ -1,4 +1,3 @@
-<!-- index.php (in root directory) -->
 <?php
 require_once 'includes/db.php';
 
