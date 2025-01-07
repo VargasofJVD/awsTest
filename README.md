@@ -8,3 +8,6 @@
             The S3 will have a Cloudfront infront of it to handle a secured and faster Content Delivery.
             *Secured S3 access: S3 will be set to private and allow access by Cloudfront only
             *Faster Content Deliver: Cloudfront caches content on edge locations upon first retrieval. Subsequent request/deliveries will be the already cached content at the edge location.
+
+old upload.php codes
+
